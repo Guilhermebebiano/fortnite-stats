@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite Stats - Ranking do Grupo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/fortnitefoto.png'); /* Caminho para a imagem de fundo */
+            background-size: cover;  /* Faz a imagem cobrir todo o fundo */
+            background-position: center;  /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(16, 17, 20, 0.8); /* Cor de fundo com transparência */
+            padding: 20px;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 900px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(62, 68, 78, 0.7); /* Fundo semi-transparente */
+        }
+
+        tr:hover {
+            background-color: #4b7de3;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+
+        td img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Fortnite Stats - Ranking do Grupo
+</header>
+
+<h2>Estatísticas dos Jogadores</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Jogador</th>
+            <th>Vitórias</th>
+            <th>Eliminações</th>
+            <th>Partidas Jogadas</th>
+            <th>Taxa de Vitória</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr onclick="window.location.href='jogador.html?img=images/pimpskyfer.jpeg'">
+            <td><img src="images/pimpskyfer.jpeg" alt="Jogador 1">SKYFER</td>
+            <td>15</td>
+            <td>300</td>
+            <td>100</td>
+            <td>15%</td>
+        </tr>
+        <tr onclick="window.location.href='jogador.html?img=images/gab.jpeg'">
+            <td><img src="images/gab.jpeg" alt="Jogador 2">Gab_k01</td>
+            <td>10</td>
+            <td>250</td>
+            <td>120</td>
+            <td>8.33%</td>
+        </tr>
+        <tr onclick="window.location.href='jogador.html?img=images/rhian.jpeg'">
+            <td><img src="images/rhian.jpeg" alt="Jogador 3">Zeta</td>
+            <td>0</td>
+            <td>-1</td>
+            <td>700</td>
+            <td>0.00%</td>
+        </tr>
+        <tr onclick="window.location.href='jogador.html?img=images/pedro.jpeg'">
+            <td><img src="images/pedro.jpeg" alt="Jogador 4">Gordão do PC</td>
+            <td>1</td>
+            <td>1</td>
+            <td>100</td>
+            <td>0.1%</td>
+        </tr>
+        <tr onclick="window.location.href='jogador.html?img=images/costela.jpeg'">
+            <td><img src="images/biel.jpeg" alt="Jogador 5">PoucaKill</td>
+            <td>18</td>
+            <td>320</td>
+            <td>150</td>
+            <td>12%</td>
+        </tr>
+        <tr onclick="window.location.href='jogador.html?img=images/soneira.jpeg'">
+            <td><img src="images/kevin.jpeg" alt="Jogador 6">Soneira</td>
+            <td>20</td>
+            <td>400</td>
+            <td>180</td>
+            <td>11.11%</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
