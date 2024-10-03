@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto do Jogador</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="playerImage" src="" alt="Foto do Jogador">
+
+    <script>
+        // Pega os parâmetros da URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const playerImage = urlParams.get('img');
+
+        // Se houver uma imagem, define como fonte da imagem na página
+        if (playerImage) {
+            document.getElementById('playerImage').src = playerImage;
+        }
+    </script>
+</body>
+</html>
